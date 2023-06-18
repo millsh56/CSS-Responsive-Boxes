@@ -1,3 +1,70 @@
 body {
   background: papayawhip;
+  color: white;
+  font-size: 2em;
+  font-family: sans-serif;
 }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    
+  }
+  
+  .a {
+    background: thistle;
+  }
+
+  .c {
+    background: mediumseagreen;
+  }
+
+  .a, .c {
+    width: 100%;
+    flex-grow: 2;
+    text-align: center;
+    min-height: 25vh;
+  
+  }
+  
+  .b {
+    background: burlywood;
+    width: 100%;
+    min-height: 50vh;
+    flex-grow: 3; 
+    text-align: center; 
+  
+  }
+
+   @media (max-width:600px) {
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  
+}
+
+.a {
+  width: 100%;
+  min-height: 25vh;
+ 
+}
+
+.b {
+  background: burlywood;
+  width: 65%;
+  min-height: 75vh;
+
+
+}
+
+.c {
+  background: mediumseagreen;
+  width: 35%;
+  max-height: 75vh;
+ 
+} 
+   }
