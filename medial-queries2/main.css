@@ -5,66 +5,103 @@ body {
   font-family: sans-serif;
 }
 
-  .container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    
-  }
-  
-  .a {
-    background: thistle;
-  }
-
-  .c {
-    background: mediumseagreen;
-  }
-
-  .a, .c {
-    width: 100%;
-    flex-grow: 2;
-    text-align: center;
-    min-height: 25vh;
-  
-  }
-  
-  .b {
-    background: burlywood;
-    width: 100%;
-    min-height: 50vh;
-    flex-grow: 3; 
-    text-align: center; 
-  
-  }
-
-   @media (max-width:600px) {
-
+/* I have been messing with this for a while im not sure why it stretches the width i could use some guidence.. */
 .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  height: 100vh;
   flex-wrap: wrap;
-  width: 100%;
-  
+
 }
 
 .a {
-  width: 100%;
-  min-height: 25vh;
- 
+  background: thistle;
+  border: 1px solid black;
+  width: 100vw;
+  height: 33vh;
+
+
 }
 
 .b {
   background: burlywood;
-  width: 65%;
-  min-height: 75vh;
+  border: 1px solid black;
+  width: 75vw;
+  height: 33vh;
 
 
 }
 
 .c {
   background: mediumseagreen;
-  width: 35%;
-  max-height: 75vh;
- 
-} 
-   }
+}
+
+.d {
+  background: turquoise;
+}
+
+.e {
+  background: navy;
+
+}
+
+.c,
+.d,
+.e {
+  border: 1px solid black;
+  width: 33vw;
+  height: 33vh;
+  
+
+}
+
+.f {
+  background: plum;
+  border: 1px solid black;
+  width: 25vw;
+  height: 66vh;
+}
+
+@media(max-width:600px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+
+  .a {
+    width: 100%;
+    flex-grow: 2;
+    text-align: center;
+    min-height: 25vh;
+  }
+
+  .b {
+    width: 100%;
+    min-height: 50vh;
+    flex-grow: 3;
+    text-align: center;
+
+  }
+
+  .c,
+  .d,
+  .e {
+    width: 33.1%;
+    flex-shrink: 1;
+    text-align: center;
+    min-height: 25vh;
+
+
+
+  }
+
+  .f {
+    width: 100%;
+    flex-grow: 2;
+    text-align: center;
+    min-height: 25vh;
+  }
+
+}

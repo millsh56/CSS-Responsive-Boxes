@@ -1,3 +1,69 @@
 body {
   background: peachpuff;
+  color: white;
+  font-size: 2em;
+  font-family: sans-serif;
 }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    flex-wrap: wrap;
+    
+  }
+  
+  .a {
+    background: thistle;
+    border: 1px solid black;
+    width: 100%;
+    flex-grow: 2;
+    text-align: center;
+    min-height: 20vh;
+  }
+
+  .b {
+    background: burlywood; 
+  
+  }
+
+  .c {
+    background: mediumseagreen;
+  }
+
+  .d {
+    background: turquoise;
+  }
+
+  .e {
+    background: navy;
+  
+  }
+
+  .f {
+    background: plum;
+  }
+
+  .g {
+    background: pink;
+  }
+
+  .b, .c, .d, .e, .f, .g {
+    width: 33.1%;
+    border: 1px solid black;
+    flex-shrink: 1;
+    text-align: center;
+    min-height: 20vh;
+    
+    
+    
+  }
+
+  .h {
+    background: cornflowerblue;
+    width: 100%;
+    border: 1px solid black;
+    flex-grow: 2;
+    text-align: center;
+    min-height: 40vh;
+  }
